@@ -82,7 +82,7 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Blockchain # your blog must have a name for it to show up in the nav bar
+blog_name: # your blog must have a name for it to show up in the nav bar
 blog_description: This is my blockchain study blog.
 permalink: /blog/:year/:title/
 
@@ -99,16 +99,16 @@ disqus_shortname: HTaeha # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  news:
+  TIL:
     defaults:
       layout: post
     output: true
-    permalink: /news/:path/
+    permalink: /TIL/:path/
   projects:
     output: true
     permalink: /projects/:path/
 
-news_limit: 5
+TIL_limit: 500
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
