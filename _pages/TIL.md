@@ -1,8 +1,8 @@
 ---
 layout: TIL
-permalink: /TIL/
-title: TIL
-description: Today I Learned.
+permalink: /DIARY/
+title: Diary
+description: Today I Learned. Or simple diary.
 nav: true
 news: true
 ---
