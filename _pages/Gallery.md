@@ -1,6 +1,6 @@
 ---
-layout: TIL
-permalink: /GALLERY/
+layout: gallery
+permalink: /gallery/
 title: Gallery
 description: It's my life.
 nav: true

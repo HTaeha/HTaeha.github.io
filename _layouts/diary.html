@@ -1,0 +1,54 @@
+---
+layout: default
+pagination:
+  enabled: true
+  collection: news
+  permalink: /diary/:num/
+  per_page: 5
+  sort_field: date
+  sort_reverse: true
+  trail:
+    before: 1 # The number of links before the current page
+    after: 3  # The number of links after the current page
+---
+<!-- Diary.html -->
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    <div class="clearfix">
+      {{ content }}
+    </div>
+
+          <div class="news">
+            {% if site.Diary -%} 
+            <div class="table-responsive">
+              <table class="table table-sm table-borderless">
+              {%- assign Diary = site.Diary | reverse -%} 
+              {% for item in Diary limit: site.Diary_limit %} 
+                <tr>
+                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                  <td>
+                    {% if item.inline -%} 
+                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                    {%- else -%} 
+                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                    {%- endif %} 
+                  </td>
+                </tr>
+              {%- endfor %} 
+              </table>
+            </div>
+          {%- else -%} 
+            <p>No Diary so far...</p>
+          {%- endif %} 
+          </div>
+
+  </article>
+
+  {% include pagination.html %}
+</div>

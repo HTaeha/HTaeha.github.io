@@ -99,16 +99,20 @@ disqus_shortname: HTaeha # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  TIL:
+  Diary:
     defaults:
       layout: post
     output: true
-    permalink: /TIL/:path/
+    permalink: /diary/:path/
   projects:
     output: true
     permalink: /projects/:path/
+  gallery:
+    output: true
+    permalink: /gallery/:path/
+  
 
-TIL_limit: 500
+Diary_limit: 500
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

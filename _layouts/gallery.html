@@ -3,7 +3,7 @@ layout: default
 pagination:
   enabled: true
   collection: news
-  permalink: /TIL/:num/
+  permalink: /diary/:num/
   per_page: 5
   sort_field: date
   sort_reverse: true
@@ -11,7 +11,7 @@ pagination:
     before: 1 # The number of links before the current page
     after: 3  # The number of links after the current page
 ---
-<!-- TIL.html -->
+<!-- gallery.html -->
 <div class="post">
 
   <header class="post-header">
@@ -25,11 +25,11 @@ pagination:
     </div>
 
           <div class="news">
-            {% if site.TIL -%} 
+            {% if site.gallery -%} 
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
-              {%- assign TIL = site.TIL | reverse -%} 
-              {% for item in TIL limit: site.TIL_limit %} 
+              {%- assign gallery = site.gallery | reverse -%} 
+              {% for item in gallery limit: site.gallery_limit %} 
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
@@ -44,7 +44,7 @@ pagination:
               </table>
             </div>
           {%- else -%} 
-            <p>No TIL so far...</p>
+            <p>No gallery so far...</p>
           {%- endif %} 
           </div>
 
