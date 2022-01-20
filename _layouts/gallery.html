@@ -1,54 +1,21 @@
 ---
 layout: default
-pagination:
-  enabled: true
-  collection: news
-  permalink: /diary/:num/
-  per_page: 5
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 1 # The number of links before the current page
-    after: 3  # The number of links after the current page
 ---
 <!-- gallery.html -->
-<div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-description">{{ page.description }}</p>
-  </header>
-
+<div class="projects">
   <article>
-    <div class="clearfix">
-      {{ content }}
+    <div class="grid">
+      {% if site.gallery -%}
+      {%- assign Gallery = site.gallery | reverse -%}
+      {% for item in Gallery limit: site.Gallery_limit %}
+      <div class="grid-item">
+        {% include figure.html path=item.img class="img-fluid rounded z-depth-1" %}
+      </div>
+      {%- endfor %}
+      {%- else -%}
+      <p>No Gallery so far...</p>
+      {%- endif %}
     </div>
-
-          <div class="news">
-            {% if site.gallery -%} 
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              {%- assign gallery = site.gallery | reverse -%} 
-              {% for item in gallery limit: site.gallery_limit %} 
-                <tr>
-                  <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
-          {%- else -%} 
-            <p>No gallery so far...</p>
-          {%- endif %} 
-          </div>
-
   </article>
 
-  {% include pagination.html %}
 </div>

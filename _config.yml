@@ -99,7 +99,7 @@ disqus_shortname: HTaeha # put your disqus shortname
 # -----------------------------------------------------------------------------
 
 collections:
-  Diary:
+  diary:
     defaults:
       layout: post
     output: true
@@ -113,6 +113,7 @@ collections:
   
 
 Diary_limit: 500
+gallery_limit: 500
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

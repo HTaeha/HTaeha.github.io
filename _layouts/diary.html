@@ -25,10 +25,10 @@ pagination:
     </div>
 
           <div class="news">
-            {% if site.Diary -%} 
+            {% if site.diary -%} 
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
-              {%- assign Diary = site.Diary | reverse -%} 
+              {%- assign Diary = site.diary | reverse -%} 
               {% for item in Diary limit: site.Diary_limit %} 
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>

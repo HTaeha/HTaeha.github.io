@@ -10,6 +10,7 @@ profile:
   address: >
     <p>動態</p>
     <p>Tokenity</p>
+    <a href="https://github.com/coreators">Coreator</a>
     <p>Seoul, Korea</p>
 
 news: false  # includes a list of news items
@@ -17,7 +18,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi~ I'm Taeha Hong, software developer in South Korea.
+Hello - I'm Taeha Hong, software developer in South Korea.
 
 I'm currently interested in Blockchain especially [Cosmos](https://cosmos.network).
 And I'm developing Web3.0 and my own blockchain using [Cosmos SDK](https://v1.cosmos.network/sdk), [Starport](https://starport.com/) and [cosmJs](https://github.com/cosmos/cosmjs) and [CosmWasm](https://cosmwasm.com/).
