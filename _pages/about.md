@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 Hello - I'm Taeha Hong, software developer in South Korea.
 
 I'm currently interested in Blockchain especially [Cosmos](https://cosmos.network).
-And I'm developing Web3.0 and my own blockchain using [Cosmos SDK](https://v1.cosmos.network/sdk), [Starport](https://starport.com/) and [cosmJs](https://github.com/cosmos/cosmjs) and [CosmWasm](https://cosmwasm.com/).
+And I'm developing Web3.0 and my own blockchain using [Cosmos SDK](https://v1.cosmos.network/sdk), [Starport](https://starport.com/) and [CosmJs](https://github.com/cosmos/cosmjs) and [CosmWasm](https://cosmwasm.com/).
 
 ### Tokenity
 [Tokenity](http://3.35.0.252/) is a decentralized social network platform. People can post photos and articles on our platform and publish them to NFT. Creators can mint and trade their coins.
