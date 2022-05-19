@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Gallery
+title: gallery
 permalink: /gallery/
 description: It's my life.
 nav: true

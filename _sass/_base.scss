@@ -563,3 +563,16 @@ html.transition *:after {
   font-size: 0.875rem;
   padding-top: 0.25rem;
 }
+
+.career {
+  display: flex;
+  .title {
+    font-size:x-large;
+    font-weight: bold;
+  }
+  .content {
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
