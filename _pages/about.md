@@ -91,7 +91,7 @@ social: true  # includes social icons at the bottom of the page
 
 ***
 <div class="career">
-  <a class="title" href="/">
+  <a class="title" href="https://coreators-tokenity.web.app/about">
     Tokenity
   </a>
   <div class="content">
