@@ -77,20 +77,6 @@ social: true  # includes social icons at the bottom of the page
 ### Projects
 ***
 <div class="career">
-  <a class="title" href="/mintlive">
-    Mintlive
-  </a>
-  <div class="content">
-    2022.02 - present
-  </div>
-</div>
-[https://mintlive.kr](http://mintlive.kr)\
-민트라이브는 NFT 투자자들을 위한 정보 제공 서비스입니다. 투자에 필요한 정보를 제공하고 정보 획득에 걸리는 시간을 획기적으로 줄여줍니다. 
-- twitter, opensea, kaikas, metamask 등 다양한 API 활용
-- NextJS, React, Node.js, NestJS, MySQL, Typescript, AWS EC2, S3
-
-***
-<div class="career">
   <a class="title" href="https://coreators-tokenity.web.app/about">
     Tokenity
   </a>
@@ -108,6 +94,20 @@ Show yourself, make money!\
 - [https://github.com/coreators/tokenity-web](https://github.com/coreators/tokenity-web)
 
 * [Discord](https://discord.gg/cE4jCSQjyW)
+
+***
+<div class="career">
+  <a class="title" href="/mintlive">
+    Mintlive
+  </a>
+  <div class="content">
+    2022.02 - 2022.05
+  </div>
+</div>
+[https://mintlive.kr](http://mintlive.kr)\
+민트라이브는 NFT 투자자들을 위한 정보 제공 서비스입니다. 투자에 필요한 정보를 제공하고 정보 획득에 걸리는 시간을 획기적으로 줄여줍니다. 
+- twitter, opensea, kaikas, metamask 등 다양한 API 활용
+- NextJS, React, Node.js, NestJS, MySQL, Typescript, AWS EC2, S3
 
 ***
 <div class="career">
